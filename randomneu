@@ -1,0 +1,11 @@
+#Random Menu Genarator Katherine Fitzpatrick
+
+adjective = ["funky", "spicy", "stinky", "peppered", "sweet", "salty", "tangy", "medium", "bitter", "sour"]
+cookingstyle = ["boiled", "fried", "roasted", "toasted", "broiled", "deep-fried", "oven-roasted", "curried", "fermented", "pan-fried"]
+food = ["dumplings", "eggs", "goat", "peanuts", "rice", "avacado", "orange", "beets", "fries", "quince"]
+i = 1
+
+while i < 11
+  puts i.to_s + " " + "#{adjective[rand(1...adjective.length)]}" + " " +  "#{cookingstyle[rand(1...cookingstyle.length)]}" + " " + "#{food[rand(1...food.length)]}"
+  i +=1
+end
